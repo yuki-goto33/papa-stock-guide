@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>発展編 | はじめてのAI株レポート教室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="home-link" href="index.html">🏠 目次にもどる</a>
+    <p class="site-name">はじめてのAI株レポート教室</p>
+  </header>
+  <main>
+    <h1>発展編: もっと楽にする方法（紹介だけ）</h1>
+    <p><strong>このページは読むだけで OK です。操作はありません。</strong>ステージAまでで、毎朝の日課はもうできあがっています。ここでは「もっと楽にする方法もあるんだよ」という紹介だけをします。やってみたくなったときのために、知っておいてもらえれば十分です。</p>
+
+    <h2>いまのやり方と、自動化したやり方</h2>
+    <p>ステージAでは、毎朝お父さん自身が3つのステップを手で回していました。実は、この3ステップをロボットに任せてしまう方法もあります。</p>
+
+    <figure class="goal-image">
+      <svg viewBox="0 0 800 480" role="img" aria-label="左側はいまのやり方で、人が毎朝3ステップを手で行う様子。右側は自動化したやり方で、時計が7時になるとロボットが同じ3ステップを自動で行い、人はコーヒーを飲みながらページを見るだけの様子。">
+        <!-- 左: いまのやり方 -->
+        <text x="190" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1864ab">いまのやり方</text>
+        <text x="190" y="54" text-anchor="middle" font-size="14" fill="#495057">（人が毎朝3ステップ）</text>
+
+        <circle cx="70" cy="95" r="20" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+        <circle cx="70" cy="83" r="7" fill="#1864ab" />
+        <path d="M 52,108 Q 70,88 88,108" fill="#1864ab" />
+
+        <rect x="110" y="80" width="260" height="42" rx="10" fill="#ffffff" stroke="#ced4da" stroke-width="2" />
+        <circle cx="132" cy="101" r="14" fill="#d9480f" />
+        <text x="132" y="106" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">1</text>
+        <text x="250" y="106" text-anchor="middle" font-size="15" fill="#212529">Claudeに聞く</text>
+
+        <path d="M 240,122 L 240,150" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="240,150 233,138 247,138" fill="#495057" />
+
+        <rect x="110" y="155" width="260" height="42" rx="10" fill="#ffffff" stroke="#ced4da" stroke-width="2" />
+        <circle cx="132" cy="176" r="14" fill="#d9480f" />
+        <text x="132" y="181" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">2</text>
+        <text x="250" y="181" text-anchor="middle" font-size="15" fill="#212529">ファイルを保存する</text>
+
+        <path d="M 240,197 L 240,225" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="240,225 233,213 247,213" fill="#495057" />
+
+        <rect x="110" y="230" width="260" height="42" rx="10" fill="#ffffff" stroke="#ced4da" stroke-width="2" />
+        <circle cx="132" cy="251" r="14" fill="#d9480f" />
+        <text x="132" y="256" text-anchor="middle" font-size="14" fill="#ffffff" font-weight="bold">3</text>
+        <text x="250" y="256" text-anchor="middle" font-size="15" fill="#212529">アップロードする</text>
+
+        <text x="190" y="305" text-anchor="middle" font-size="14" fill="#495057">これを毎朝、人が手で行う</text>
+
+        <!-- 区切り線 -->
+        <line x1="400" y1="20" x2="400" y2="460" stroke="#ced4da" stroke-width="2" stroke-dasharray="6,6" />
+
+        <!-- 右: 自動化したやり方 -->
+        <text x="610" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1864ab">自動化したやり方</text>
+        <text x="610" y="54" text-anchor="middle" font-size="14" fill="#495057">（ロボットが自動で回す）</text>
+
+        <circle cx="520" cy="110" r="32" fill="#ffffff" stroke="#495057" stroke-width="3" />
+        <line x1="520" y1="110" x2="520" y2="90" stroke="#495057" stroke-width="3" />
+        <line x1="520" y1="110" x2="536" y2="118" stroke="#495057" stroke-width="3" />
+        <text x="520" y="152" text-anchor="middle" font-size="14" fill="#495057" font-weight="bold">朝7:00</text>
+
+        <path d="M 560,110 L 605,110" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="605,110 593,103 593,117" fill="#495057" />
+
+        <rect x="615" y="80" width="90" height="70" rx="12" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+        <circle cx="640" cy="105" r="8" fill="#1864ab" />
+        <circle cx="680" cy="105" r="8" fill="#1864ab" />
+        <rect x="630" y="122" width="60" height="8" rx="4" fill="#1864ab" />
+        <line x1="660" y1="80" x2="660" y2="65" stroke="#1864ab" stroke-width="3" />
+        <circle cx="660" cy="62" r="5" fill="#1864ab" />
+        <text x="660" y="170" text-anchor="middle" font-size="13" fill="#495057">ロボット</text>
+
+        <path d="M 660,185 L 660,215" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="660,215 653,203 667,203" fill="#495057" />
+
+        <rect x="520" y="222" width="280" height="50" rx="10" fill="#fff3bf" stroke="#d9480f" stroke-width="3" />
+        <text x="660" y="243" text-anchor="middle" font-size="14" fill="#212529" font-weight="bold">①→②→③を自動で実行</text>
+        <text x="660" y="262" text-anchor="middle" font-size="12" fill="#495057">さっきの3ステップをまとめて</text>
+
+        <path d="M 660,272 L 660,300" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="660,300 653,288 667,288" fill="#495057" />
+
+        <circle cx="610" cy="345" r="22" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+        <circle cx="610" cy="333" r="8" fill="#1864ab" />
+        <path d="M 588,360 Q 610,338 632,360" fill="#1864ab" />
+
+        <path d="M 648,355 Q 665,350 670,365" stroke="#495057" stroke-width="2" fill="none" />
+        <rect x="660" y="362" width="26" height="22" rx="4" fill="#ffffff" stroke="#495057" stroke-width="2" />
+        <path d="M 686,368 Q 696,368 696,376 Q 696,384 686,382" fill="none" stroke="#495057" stroke-width="2" />
+        <line x1="668" y1="362" x2="668" y2="352" stroke="#adb5bd" stroke-width="2" />
+        <line x1="674" y1="362" x2="674" y2="356" stroke="#adb5bd" stroke-width="2" />
+
+        <text x="610" y="400" text-anchor="middle" font-size="14" fill="#2b8a3e" font-weight="bold">人はコーヒーを飲んで</text>
+        <text x="610" y="420" text-anchor="middle" font-size="14" fill="#2b8a3e" font-weight="bold">できたページを見るだけ</text>
+      </svg>
+    </figure>
+
+    <h2>自動化のしくみ</h2>
+    <p>この「ロボットに任せる」仕組みは、<a class="term" href="glossary.html#actions">GitHub Actions（自動働きロボット）</a>という機能を使います。倉庫ビル（GitHub）の中に住んでいるロボットが、決まった時刻に3つの作業をまとめてやってくれる、というイメージです。</p>
+
+    <figure class="goal-image">
+      <svg viewBox="0 0 800 640" role="img" aria-label="自動化のしくみを3段で説明する図。1段目は決まった時刻に倉庫ビルのロボットが起きる様子。2段目はロボットが株の情報を集めてAIに分析を頼む様子。3段目はできたページを箱に入れ替える様子。">
+        <!-- 段1 -->
+        <circle cx="55" cy="95" r="26" fill="#1864ab" />
+        <text x="55" y="103" text-anchor="middle" font-size="20" fill="#ffffff" font-weight="bold">①</text>
+
+        <circle cx="190" cy="95" r="44" fill="#ffffff" stroke="#495057" stroke-width="3" />
+        <line x1="190" y1="95" x2="190" y2="68" stroke="#495057" stroke-width="3" />
+        <line x1="190" y1="95" x2="212" y2="106" stroke="#495057" stroke-width="3" />
+        <text x="190" y="155" text-anchor="middle" font-size="14" fill="#495057" font-weight="bold">朝7:00</text>
+
+        <path d="M 245,95 L 300,95" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="300,95 288,88 288,102" fill="#495057" />
+
+        <rect x="310" y="60" width="110" height="80" rx="12" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+        <circle cx="340" cy="92" r="8" fill="#1864ab" />
+        <circle cx="390" cy="92" r="8" fill="#1864ab" />
+        <rect x="330" y="112" width="70" height="8" rx="4" fill="#1864ab" />
+        <line x1="365" y1="60" x2="365" y2="45" stroke="#1864ab" stroke-width="3" />
+        <circle cx="365" cy="42" r="5" fill="#1864ab" />
+
+        <text x="400" y="190" text-anchor="middle" font-size="17" fill="#212529" font-weight="bold">決まった時刻に、倉庫ビルのロボットが起きる</text>
+
+        <line x1="40" y1="225" x2="760" y2="225" stroke="#ced4da" stroke-width="2" stroke-dasharray="4,8" />
+
+        <!-- 段2 -->
+        <circle cx="55" cy="275" r="26" fill="#1864ab" />
+        <text x="55" y="283" text-anchor="middle" font-size="20" fill="#ffffff" font-weight="bold">②</text>
+
+        <rect x="140" y="245" width="100" height="70" rx="10" fill="#fff3bf" stroke="#d9480f" stroke-width="3" />
+        <rect x="155" y="260" width="70" height="10" rx="3" fill="#d9480f" />
+        <rect x="155" y="278" width="50" height="10" rx="3" fill="#d9480f" />
+        <rect x="155" y="296" width="60" height="10" rx="3" fill="#d9480f" />
+        <text x="190" y="335" text-anchor="middle" font-size="13" fill="#495057">株の情報</text>
+
+        <path d="M 260,280 L 320,280" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="320,280 308,273 308,287" fill="#495057" />
+
+        <rect x="340" y="245" width="140" height="70" rx="12" fill="#e7f5ff" stroke="#1864ab" stroke-width="3" />
+        <text x="410" y="286" text-anchor="middle" font-size="18" fill="#1864ab" font-weight="bold">AI（Claude）</text>
+        <text x="410" y="335" text-anchor="middle" font-size="13" fill="#495057">分析をお願いする</text>
+
+        <text x="400" y="375" text-anchor="middle" font-size="17" fill="#212529" font-weight="bold">ロボットが株の情報を集めて、AIに分析を頼む</text>
+
+        <line x1="40" y1="405" x2="760" y2="405" stroke="#ced4da" stroke-width="2" stroke-dasharray="4,8" />
+
+        <!-- 段3 -->
+        <circle cx="55" cy="455" r="26" fill="#1864ab" />
+        <text x="55" y="463" text-anchor="middle" font-size="20" fill="#ffffff" font-weight="bold">③</text>
+
+        <rect x="140" y="425" width="120" height="70" rx="10" fill="#ffffff" stroke="#ced4da" stroke-width="2" />
+        <rect x="155" y="440" width="90" height="8" rx="3" fill="#ced4da" />
+        <rect x="155" y="456" width="90" height="8" rx="3" fill="#ced4da" />
+        <rect x="155" y="472" width="60" height="8" rx="3" fill="#ced4da" />
+        <text x="200" y="515" text-anchor="middle" font-size="13" fill="#495057">新しいページ</text>
+
+        <path d="M 280,460 L 340,460" stroke="#495057" stroke-width="3" fill="none" />
+        <polygon points="340,460 328,453 328,467" fill="#495057" />
+
+        <rect x="360" y="420" width="160" height="80" rx="10" fill="#ffe8cc" stroke="#d9480f" stroke-width="4" />
+        <line x1="360" y1="445" x2="520" y2="445" stroke="#d9480f" stroke-width="2" />
+        <text x="440" y="433" text-anchor="middle" font-size="12" fill="#d9480f">watashi-no-page</text>
+        <rect x="380" y="458" width="120" height="30" rx="5" fill="#ffffff" stroke="#495057" stroke-width="2" />
+        <text x="440" y="478" text-anchor="middle" font-size="13" fill="#212529">index.html</text>
+        <text x="440" y="535" text-anchor="middle" font-size="13" fill="#495057">箱（リポジトリ）</text>
+
+        <text x="400" y="575" text-anchor="middle" font-size="17" fill="#212529" font-weight="bold">できたページを箱に入れ替える</text>
+      </svg>
+    </figure>
+
+    <div class="goal-card">
+      <h3>ただし、知っておいてほしいこと</h3>
+      <p>自動化はとても便利ですが、よいことばかりではありません。正直にお伝えします。</p>
+      <ul>
+        <li>AIを呼ぶための「鍵」（APIキー）を自分で用意する必要があります。</li>
+        <li>その鍵を使った分だけ、少額の料金がかかる場合があります（無料ではなくなることがあります）。</li>
+        <li>設定には、少しプログラミングの知識が必要です。お父さん一人で行うのは難しいところです。</li>
+      </ul>
+      <p>ですので、今はステージAまでの「毎朝自分で3ステップ」のやり方で十分です。自動化は、あくまで「こんな未来もある」という紹介にとどめておきます。</p>
+    </div>
+
+    <div class="disclaimer">この教室で作る分析は AI による参考情報です。<strong>投資判断はご自身の責任で</strong>行ってください。大切なお金を動かす前に、必ずご自身で確かめましょう。</div>
+
+    <p>やってみたくなったら、息子に相談してください。一緒にやりましょう 📞</p>
+    <p><a href="index.html">🏠 目次にもどる</a></p>
+  </main>
+  <footer class="site-footer">
+    <p>わからなくなったら、いつでも息子に電話してください 📞</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
